@@ -43,16 +43,11 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        os: ["ubuntu-16.04","macos-latest"]
+        os: ["ubuntu-16.04"]
         python: ["3.9" ]
-        platform: ["x86_64"]
+        platform: ["aarch64"]
         unicode-width: [32]
-        mb-ml-ver: ["1", "2010"]
-        exclude:
-          - os: "macos-latest"
-            platform: "i686"
-          - os: "macos-latest"
-            mb-ml-ver: "1"
+        mb-ml-ver: ["2014"]
         include:
           - os: "ubuntu-16.04"
             os-name: "xenial"
