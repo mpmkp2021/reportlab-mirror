@@ -44,8 +44,8 @@ jobs:
       fail-fast: true
       matrix:
         os: ["ubuntu-16.04","macos-latest"]
-        python: ["2.7", "3.6", "3.7", "3.8", "3.9" ]
-        platform: ["x86_64", "i686"]
+        python: ["3.9" ]
+        platform: ["x86_64"]
         unicode-width: [32]
         mb-ml-ver: ["1", "2010"]
         exclude:
