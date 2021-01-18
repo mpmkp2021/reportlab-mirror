@@ -67,7 +67,7 @@ jobs:
           python-version: 3.9
       
       - name: Set up QEMU
-        if: success()contains($PLAT, 'aarch64')
+        if: success(contains($PLAT, 'aarch64'))
         id: qemu
         uses: docker/setup-qemu-action@v1
      
