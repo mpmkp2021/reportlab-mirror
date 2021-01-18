@@ -32,7 +32,7 @@ jobs:
           CITOOLS_PASSWORD: "${{secrets.CITOOLS_PASSWORD}}"
         run: |
             python -mpip install --no-cache https://hg.reportlab.com/hg-public/rl-ci-tools/archive/tip.tar.gz -U
-            python -mrl_ci_tools clear-cache "$RLCACHE"
+            #python -mrl_ci_tools clear-cache "$RLCACHE"
             echo "cleared remote cache for $RLCACHE"
   build:
     needs: [clear-cache]
