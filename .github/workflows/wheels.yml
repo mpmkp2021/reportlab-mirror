@@ -65,6 +65,12 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.9
+      
+      - name: Set up QEMU
+        if: success()contains($PLAT, 'aarch64')
+        id: qemu
+        uses: docker/setup-qemu-action@v1
+     
       - name: Build Wheel
         env:
           CITOOLS_USER: "${{secrets.CITOOLS_USER}}"
