@@ -6,7 +6,7 @@ on:
       - localpr
 
 env:
-  GIT_REPO: "MrBitBucket/reportlab-mirror"
+  GIT_REPO: "mpmkp2021/reportlab-mirror"
   REPO_DIR: reportlab
   MACOSX_DEPLOYMENT_TARGET: "10.10"
   WHEEL_SDIR: wheelhouse
