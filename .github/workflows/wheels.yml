@@ -53,8 +53,6 @@ jobs:
             os-name: "xenial"
             python: "3.6"
             unicode-width: 16
-            platform: "x86_64"
-            mb-ml-ver: "2010"
     env:
       BUILD_COMMIT: HEAD
       PLAT: ${{ matrix.platform }}
